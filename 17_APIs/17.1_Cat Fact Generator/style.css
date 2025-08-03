@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+:root{
+    --containerColor: #fff;
+    --primaryColor: #083546;
+    --secondaryColor: #DAF5FF;
+    --textColor: #083546;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--primaryColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 400px;
+    height: 500px;
+    padding: 2rem 1rem;
+    background-color: var(--containerColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: .25rem;
+}
+
+.top{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.top h2{
+    color: var(--primaryColor);
+}
+
+.middle{
+    background-color: var(--secondaryColor);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem .5rem;
+    border-radius: .25rem;
+}
+
+.middle .fact-text{
+    text-align: center;
+}
+
+.bottom{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom button{
+    width: 100%;
+    cursor: pointer;
+    padding: .8rem 0;
+    background-color: var(--primaryColor);
+    color: var(--containerColor);
+    border: none;
+    border-radius: .25rem;
+    font-size: 1rem;
+    transition: all ease-in 0.2s;
+}
+
+
+.bottom button:hover{
+    opacity: 80%;
+}
