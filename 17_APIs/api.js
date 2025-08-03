@@ -21,3 +21,18 @@ fetch(url)
 .catch((err) => {
     console.log(`ERROR - ${err}`);
 })
+
+
+// Using async-await with fetch
+
+async function getFact() {
+    try{
+        let res = await fetch(url);
+        let data = await res.json();
+        console.log(data.fact);
+    } catch(err){
+        console.log(`ERROR - ${err}`);
+    }
+}
+
+getFact();
